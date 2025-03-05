@@ -1,7 +1,7 @@
 import inspect
 import pandas as pd
 import numpy as np
-import pytest
+
 
 import WhoAmI_File
 def test_WhoAmI():
