@@ -1,11 +1,7 @@
 import numpy as np
 
-import numpy as np
 
-def ES(losses, alpha=None, confidence=None, VaR=None, use_PnL=False):
-    if confidence is not None:
-        alpha = 1 - confidence 
-    
+def ES(losses, alpha=None, confidence=None, VaR=None, use_PnL=False):    
     if VaR is None:
         VaR = np.percentile(losses, 100 * (1 - alpha))
 
